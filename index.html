@@ -1,112 +1,165 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="google-site-verification" content="BLVbTNbBkoKVIOmetWdrXf7l4ROQyb5NISWfkL7HB1g" />
 
-<title>R.P ESPACE VERT - Jardinier Dijon</title>
+<title>Jardinier Dijon - RP Espace Vert 21</title>
+
+<meta name="description" content="Jardinier à Dijon. Tonte, élagage, abattage, débroussaillage et création de jardin. Devis gratuit RP Espace Vert 21.">
 
 <style>
 
 body{
-margin:0;
 font-family:Arial;
+margin:0;
+background:#f4f6f4;
+color:#333;
 }
 
-.hero{
-height:100vh;
-background-image:url("logo.jpg");
-background-size:cover;
-background-position:center;
+header{
+background:url("logo.jpg") center/cover;
+height:400px;
+color:white;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-color:white;
-background-color:rgba(0,0,0,0.5);
 }
 
-.hero h1{
-display:none;
+header h1{
+font-size:45px;
+margin:0;
 }
 
-.hero p{
-font-size:22px;
-margin:20px 0;
-}
-
-.button{
-background:#2e7d32;
-padding:15px 30px;
-color:white;
-text-decoration:none;
-border-radius:5px;
+header p{
 font-size:20px;
+}
+
+.cta{
+margin-top:20px;
+}
+
+.btn{
+padding:15px 25px;
+margin:10px;
+border:none;
+border-radius:30px;
+font-size:16px;
+cursor:pointer;
+}
+
+.call{
+background:#2e7d32;
+color:white;
+}
+
+.whatsapp{
+background:#25D366;
+color:white;
 }
 
 nav{
 background:#1b5e20;
-padding:15px;
 text-align:center;
+padding:15px;
 }
 
 nav a{
 color:white;
-margin:15px;
+margin:20px;
 text-decoration:none;
 font-weight:bold;
 }
 
 section{
-max-width:1100px;
-margin:auto;
-padding:50px 20px;
-}
-
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:#f4f4f4;
-padding:20px;
-border-radius:10px;
+padding:60px 20px;
 text-align:center;
 }
 
-.card img{
-width:100%;
+.services{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+width:250px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.gallery img{
+width:300px;
+margin:10px;
 border-radius:10px;
+}
+
+.contact{
+background:#e8f5e9;
 }
 
 footer{
 background:#1b5e20;
 color:white;
+padding:30px;
 text-align:center;
-padding:20px;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<div class="hero">
+<header>
 
-<a class="button" href="tel:0780481152">📞 Appeler maintenant</a>
+<h1>RP Espace Vert 21</h1>
+
+<p>Jardinier à Dijon - Entretien et création d'espaces verts</p>
+
+<div class="cta">
+
+<a href="tel:0780481152">
+<button class="btn call"> Appeler maintenant</button>
+</a>
+
+<a href="https://wa.me/33780481152">
+<button class="btn whatsapp"> WhatsApp</button>
+</a>
 
 </div>
+
+</header>
 
 <nav>
 
 <a href="#services">Services</a>
+<a href="#realisations">Réalisations</a>
 <a href="#contact">Contact</a>
 
 </nav>
+
+<section>
+
+<h2>Jardinier professionnel à Dijon</h2>
+
+<p>
+RP Espace Vert 21 est une entreprise spécialisée dans l'entretien et la création d'espaces verts à Dijon et en Côte-d'Or.
+</p>
+
+</section>
 
 <section id="services">
 
@@ -115,48 +168,79 @@ padding:20px;
 <div class="services">
 
 <div class="card">
-
-<img src="flyers.jpg">
-
-<h3>Entretien de jardin</h3>
-
-<p>Tonte de pelouse, débroussaillage et remise en état d'espaces verts.</p>
-
+<h3>Tonte de pelouse</h3>
+<p>Entretien régulier de votre jardin.</p>
 </div>
 
 <div class="card">
+<h3>Élagage</h3>
+<p>Taille et entretien des arbres.</p>
+</div>
 
-<img src="camion.jpg">
+<div class="card">
+<h3>Abattage</h3>
+<p>Abattage sécurisé d'arbres.</p>
+</div>
 
-<h3>Élagage et abattage</h3>
+<div class="card">
+<h3>Débroussaillage</h3>
+<p>Nettoyage de terrain.</p>
+</div>
 
-<p>Travaux d'élagage et abattage d'arbres.</p>
+<div class="card">
+<h3>Création de jardin</h3>
+<p>Aménagement d'espaces verts.</p>
+</div>
 
+<div class="card">
+<h3>Remise en état</h3>
+<p>Nettoyage complet de terrain.</p>
 </div>
 
 </div>
 
 </section>
 
-<section id="contact">
+<section id="realisations">
+
+<h2>Nos réalisations</h2>
+
+<div class="gallery">
+
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
 
 <h2>Contact</h2>
 
-<p><strong>R.P ESPACE VERT</strong></p>
+<p> Dijon - Côte d'Or</p>
 
-<p>📞 07 80 48 11 52</p>
-<p>Mail:rayan.espace.vert21@gmail.com</p>
-  
-<p>Devis gratuit • Déplacement gratuit</p>
+<p> 07 80 48 11 52</p>
 
-<a class="button" href="tel:0780481152">Appeler</a>
+<form>
+
+<input type="text" placeholder="Nom"><br><br>
+
+<input type="tel" placeholder="Téléphone"><br><br>
+
+<textarea placeholder="Votre message"></textarea><br><br>
+
+<button class="btn call">Envoyer</button>
+
+</form>
 
 </section>
 
 <footer>
 
-<p>© R.P ESPACE VERT </p>
-<p>intervention sur toute commune du 21</p>
+<p>RP Espace Vert 21 - Jardinier Dijon</p>
+
 </footer>
 
 </body>
