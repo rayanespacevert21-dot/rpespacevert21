@@ -1,203 +1,210 @@
-<! DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
-<tête >
+<head>
 
 <meta charset="UTF-8">
-<méta nom="viewport »
-content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Jardinier professionnel à Dijon. Tonte, élagage, abattage, débroussaillage et création de jardin. Devis gratuit." >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style >
+<meta name="description" content="Jardinier professionnel à Dijon. Tonte, élagage, abattage, débroussaillage et création de jardin. Devis gratuit.">
 
-corps{ 
-famille de polices : Arial, sans serif ; marge : 0 ; Contexte : #f4f6f4 ; Couleur : #333 ; hauteur de ligne : 1,6 ;
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f4;
+    color: #333;
+    line-height: 1.6;
 }
 
 header{
-  largeur : 100 %;
-  Taille : 500px;
-  Contexte : URL («logo.jpg») Centre centre / Couverture sans répétition ;
+    width: 100%;
+    height: 500px;
+    background: url("logo.jpg") center center / cover no-repeat;
 }
+
 .cta{
-  text-align : centre ;
-  marge : 25px 0 
+    text-align: center;
+    margin: 25px 0;
 }
 
 .btn{
-  Rembourrage : 14px 26px ;
-  frontière : aucune ;
-  Rayon de frontière : 30px ;
-  taille de police : 16px ;
-  curseur : pointeur ;
-  Écart : 5px ;
-  transition : 0,3s ;}
+    padding: 14px 26px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.3s;
+}
 
-  .btn :hover{
-    opacité : 0,9 ;
-  }
+.btn:hover{
+    opacity: 0.9;
+}
+
 .call{
-  Contexte : #2e7d32 ;
-  Couleur : Blanc ;
+    background: #2e7d32;
+    color: white;
 }
 
 .whatsapp{
-  Contexte : #25D366 ;
-  Couleur : Blanc ;
+    background: #25D366;
+    color: white;
 }
 
-aucun{
-  Contexte : #1b5e20 ;
-  Rembourrage : 15px ;
-  text-align : centre ;
-  position : collante ;
-  Haut : 0 ;
-  Z-index : 1000 ;
+nav{
+    background: #1b5e20;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-pas de a{
-    Couleur : Blanc ;
-    marge : 15px ;
-    décoration textuelle : aucune ;
-    Poids de la police : gras ;
+nav a{
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
 }
-
 section{
-  Rembourrage : 60px 20px ;
-  text-align : centre ;
+    padding: 60px 20px;
+    text-align: center;
 }
 
 .services{
-  affichage : flex ;
-  Flex-Wrap : Wrap ;
-  Justificify-Content : Centre; 
-  écart : 25px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
 }
 
 .card{
-  Contexte : Blanc ;
-  largeur : 260px ;
-  Rembourrage : 25px ;
-  Rayon de frontière : 10px ;
-  Box-shadow : 0 5px 15px RGB (0,0,0,0,1) ;
-  transition : 0,3s ;
+    background: white;
+    width: 260px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
 }
 
-.card :hover{
-  transformer : translateY(-5px) ;
+.card:hover{
+    transform: translateY(-5px);
 }
 
 .gallery{
-  affichage : flex ;
-  Flex-Wrap : Wrap ;
-  Justificify-Content : Centre ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .gallery img{
-  largeur : 300px ;
-  marge : 10px ;
-  Rayon de frontière : 10px ;
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
 }
 
 .map{
-  largeur maximale : 900px ;
-  Margin : Auto ;
-  Marge-haut : 30px ;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 30px;
 }
 
 .reviews{
-  affichage : flex ;
-  Flex-Wrap : Wrap ;
-  Justificify-Content : Centre ;
-  écart : 20px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .review{
-  Contexte : Blanc ;
-  Rembourrage : 20px ;
-  largeur : 250px ;
-  Rayon de frontière : 10px ;
-  Box-shadow : 0 4px 12px RGB (0,0,0,0,1) ;
-  }
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
 
 .contact{
-  Contexte : #e8f5e9 ;
+    background: #e8f5e9;
 }
 
 form{
-  largeur maximale : 500px ;
-  Margin : Auto ;
+    max-width: 500px;
+    margin: auto;
 }
 
-entrée,textarea{
-  largeur : 100 % ;
-  Rembourrage : 12px ;
-  Marge-haut : 10px ;
-  Rayon de frontière : 8px ;
-  bordure : 1px #ccc solide ;
-  taille de police : 16px ;
+input,
+textarea{
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
 }
 
 textarea{
-  taille : 120px ;
-  redimensionnement : aucun ;
+    height: 120px;
+    resize: none;
 }
 
 footer{
-  Contexte : #1b5e20 ;
-  Couleur : Blanc ;
-  text-align : centre ;
-  Rembourrage : 30px ;
+    background: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 30px;
 }
 
 .whatsapp-float{
-  Position : fixe ;
-  bas : 20px ;
-  droite : 20px ;
-  Contexte : #25D366 ;
-  Couleur : Blanc ;
-  taille de police : 24px ;
-  rembourrage : 15px 18px ;
-  rayon de frontière : 50 % ;
-  décoration textuelle : aucune ;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    font-size: 24px;
+    padding: 15px 18px;
+    border-radius: 50%;
+    text-decoration: none;
 }
 
-</style >
+</style>
 
-</tête>
+</head>
 
-< corps >
+<body>
 
-<en-tête></en-tête>
+<header></header>
 
 <div class="cta">
-  
-<a href="tel :0780481152">
-<button class="btn call"> Appeler</button></a >
+    <a href="tel:0780481152">
+        <button class="btn call">Appeler</button>
+    </a>
 
-<a href="https://wa.me/ 33780481152">    <button class="btn whatsapp">WhatsApp</button></a >
-
+    <a href="https://wa.me/33780481152">
+        <button class="btn whatsapp">WhatsApp</button>
+    </a>
 </div>
 
-</en-tête>
-
-< navigation >
-
-<a href="#services">Services</a>
-<a href="#realisations">Réalisations</a>
-<a href="#zone">Zone d'intervention</a>
-<a href="#contact">Contact</a>
-
-</navigation >
+<nav>
+    <a href="#services">Services</a>
+    <a href="#realisations">Réalisations</a>
+    <a href="#zone">Zone d'intervention</a>
+    <a href="#contact">Contact</a>
+</nav>
 
 <section>
 
 <h2>Jardinier professionnel à Dijon</h2>
 
 <p>
-RP Espace Vert 21 propose l'entretien complet de votre jardin : tonte de pelouse, élagage, abattage d'arbres, débroussaillage et création d'espaces verts à Dijon et dans toute la Côte-d'Or.
+RP Espace Vert 21 propose l'entretien complet de votre jardin :
+tonte de pelouse, élagage, abattage d'arbres,
+débroussaillage et création d'espaces verts à Dijon
+et dans toute la Côte-d'Or.
 </p>
 
-</section >
+</section>
 
 <section id="services">
 
@@ -216,7 +223,7 @@ RP Espace Vert 21 propose l'entretien complet de votre jardin : tonte de pelouse
 </div>
 
 <div class="card">
-<h3>Massacre</h3>
+<h3>Abattage</h3>
 <p>Abattage sécurisé d'arbres dangereux.</p>
 </div>
 
@@ -237,9 +244,9 @@ RP Espace Vert 21 propose l'entretien complet de votre jardin : tonte de pelouse
 
 </div>
 
-</section >
+</section>
 
-<section id="réalisations">
+<section id="realisations">
 
 <h2>Nos réalisations</h2>
 
@@ -252,7 +259,7 @@ RP Espace Vert 21 propose l'entretien complet de votre jardin : tonte de pelouse
 
 </div>
 
-</section >
+</section>
 
 <section id="zone">
 
@@ -262,71 +269,94 @@ RP Espace Vert 21 propose l'entretien complet de votre jardin : tonte de pelouse
 
 <div class="map">
 
-<iframe src="https://www.google.com/ maps ?q=Dijon&output=embed"
-largeur="100 %»
-hauteur="400 »
-style="border :0 ;»
-loading="paresseux »
-Autoriser l’écran plein >
+<iframe
+    src="https://www.google.com/maps?q=Dijon&output=embed"
+    width="100%"
+    height="400"
+    style="border:0;"
+    loading="lazy"
+    allowfullscreen>
 
-</iframe >
+</iframe>
 
 </div>
 
-</section >
+</section>
 
 <section id="avis">
 
-<h2>Avis clients</h2>
+    <h2>Avis clients</h2>
 
-<div class="critiques">
+    <div class="reviews">
 
-<div class="review"><p>Très bon travail pour l'élagage de mes arbres.</p>
-< fort > Jean M.< / fort >
-</div>
+        <div class="review">
+            <p>Très bon travail pour l'élagage de mes arbres.</p>
+            <strong>Jean M.</strong>
+        </div>
 
-<div class="review"><p>Entreprise sérieuse, jardin remis à neuf.</p>
-< forte> Sophie L.</forte>
-</div>
+        <div class="review">
+            <p>Entreprise sérieuse, jardin remis à neuf.</p>
+            <strong>Sophie L.</strong>
+        </div>
 
-<div class="review"><p>Travail rapide et professionnel.</p>
-< fort >Marc D.< fort >
-</div>
+        <div class="review">
+            <p>Travail rapide et professionnel.</p>
+            <strong>Marc D.</strong>
+        </div>
 
-</div>
+    </div>
 
-</section >
+</section>
 
-<section class="contact » id="contact">
+<section class="contact" id="contact">
 
-<h2>Contact</h2>
+    <h2>Contact</h2>
 
-<p>Dijon - Côte-d’Or</p><p>07&nbsp ; 80% 48 11&nbsp ; 52</p>
-<p>rayan.espace.vert21@gmail.com</p>
+    <p>Dijon - Côte-d'Or</p>
+    <p>07 80 48 11 52</p>
+    <p>rayan.espace.vert21@gmail.com</p>
 
-<form action="https://formspree.io/ f/xyknjeba » méthode="POST">
+    <form action="https://formspree.io/f/xyknjeba" method="POST">
 
-<type d’entrée="texte » nom="nom » placeholder="Nom » requis>
+        <input
+            type="text"
+            name="name"
+            placeholder="Nom"
+            required>
 
-<type d’entrée="email » nom="email » placeholder="Email » requis>
+        <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            required>
 
-<type d’entrée="tel » nom="téléphone » placeholder="Téléphone">
+        <input
+            type="tel"
+            name="phone"
+            placeholder="Téléphone">
 
-<textarea name="message » placeholder="Votre message » required></textarea>
+        <textarea
+            name="message"
+            placeholder="Votre message"
+            required></textarea>
 
-<type button="soumission » class="btn appelle">Envoyer</button>
+        <button type="submit" class="btn call">
+            Envoyer
+        </button>
 
-</forme >
+    </form>
 
-</section >
+</section>
 
-<pied>
+<footer>
 
-<p>© 2026 RP Espace Vert 21 - Jardinier à Dijon</p>
+    <p>&copy; 2026 RP Espace Vert 21 - Jardinier à Dijon</p>
 
 </footer>
 
-<a href="https://wa.me/ 33780481152 » class="whatsapp-float"> </a>
+<a href="https://wa.me/33780481152" class="whatsapp-float">
+    💬
+</a>
 
-</corps >
+</body>
 </html>
