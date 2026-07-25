@@ -1,92 +1,332 @@
-<! DOCTYPE html><html lang="fr"><tête >
-<meta charset="UTF-8"><méta nom="viewport » content="width=device-width, initial-scale=1.0">
+<! DOCTYPE html>
+<html lang="fr">
+<tête >
+
+<meta charset="UTF-8">
+<méta nom="viewport »
+content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Jardinier professionnel à Dijon. Tonte, élagage, abattage, débroussaillage et création de jardin. Devis gratuit." >
+
 <style >
-corps{ famille de polices : Arial, sans serif ; marge : 0 ; Contexte : #f4f6f4 ; Couleur : #333 ; hauteur de ligne : 1,6 ;}
-header{ largeur : 100 % ; Taille : 500px ; Contexte : URL (« banniere.jpg ») Centre centre / Couverture sans répétition ;}
-.cta{ text-align : centre ; marge : 25px 0 ;}
-.btn{ Rembourrage : 14px 26px ; frontière : aucune ; Rayon de frontière : 30px ; taille de police : 16px ; curseur : pointeur ; Écart : 5px ; transition : 0,3s ;}
-.btn :hover{ opacité : 0,9 ;}
-.call{ Contexte : #2e7d32 ; Couleur : Blanc ;}
-.whatsapp{ Contexte : #25D366 ; Couleur : Blanc ;}
-aucun{ Contexte : #1b5e20 ; Rembourrage : 15px ; text-align : centre ; position : collante ; Haut : 0 ; Z-index : 1000 ;}
-pas de a{ Couleur : Blanc ; marge : 15px ; décoration textuelle : aucune ; Poids de la police : gras ;}
-section{ Rembourrage : 60px 20px ; text-align : centre ;}
-.services{ affichage : flex ; Flex-Wrap : Wrap ; Justificify-Content : Centre ; écart : 25px ;}
-.card{ Contexte : Blanc ; largeur : 260px ; Rembourrage : 25px ; Rayon de frontière : 10px ; Box-shadow : 0 5px 15px RGB (0,0,0,0,1) ; transition : 0,3s ;}
-.card :hover{ transformer : translateY(-5px) ;}
-.gallery{ affichage : flex ; Flex-Wrap : Wrap ; Justificify-Content : Centre ;}
-.gallery img{ largeur : 300px ; marge : 10px ; Rayon de frontière : 10px ;}
-.map{ largeur maximale : 900px ; Margin : Auto ; Marge-haut : 30px ;}
-.reviews{ affichage : flex ; Flex-Wrap : Wrap ; Justificify-Content : Centre ; écart : 20px ;}
-.review{ Contexte : Blanc ; Rembourrage : 20px ; largeur : 250px ; Rayon de frontière : 10px ; Box-shadow : 0 4px 12px RGB (0,0,0,0,1) ;}
-.contact{ Contexte : #e8f5e9 ;}
-form{ largeur maximale : 500px ; Margin : Auto ;}
-entrée,textarea{ largeur : 100 % ; Rembourrage : 12px ; Marge-haut : 10px ; Rayon de frontière : 8px ; bordure : 1px #ccc solide ; taille de police : 16px ;}
-textarea{ taille : 120px ; redimensionnement : aucun ;}
-footer{ Contexte : #1b5e20 ; Couleur : Blanc ; text-align : centre ; Rembourrage : 30px ;}
-.whatsapp-float{ Position : fixe ; bas : 20px ; droite : 20px ; Contexte : #25D366 ; Couleur : Blanc ; taille de police : 24px ; rembourrage : 15px 18px ; rayon de frontière : 50 % ; décoration textuelle : aucune ;}
+
+corps{ 
+famille de polices : Arial, sans serif ; marge : 0 ; Contexte : #f4f6f4 ; Couleur : #333 ; hauteur de ligne : 1,6 ;
+}
+
+header{
+  largeur : 100 %;
+  Taille : 500px;
+  Contexte : URL («logo.jpg») Centre centre / Couverture sans répétition ;
+}
+.cta{
+  text-align : centre ;
+  marge : 25px 0 
+}
+
+.btn{
+  Rembourrage : 14px 26px ;
+  frontière : aucune ;
+  Rayon de frontière : 30px ;
+  taille de police : 16px ;
+  curseur : pointeur ;
+  Écart : 5px ;
+  transition : 0,3s ;}
+
+  .btn :hover{
+    opacité : 0,9 ;
+  }
+.call{
+  Contexte : #2e7d32 ;
+  Couleur : Blanc ;
+}
+
+.whatsapp{
+  Contexte : #25D366 ;
+  Couleur : Blanc ;
+}
+
+aucun{
+  Contexte : #1b5e20 ;
+  Rembourrage : 15px ;
+  text-align : centre ;
+  position : collante ;
+  Haut : 0 ;
+  Z-index : 1000 ;
+}
+
+pas de a{
+    Couleur : Blanc ;
+    marge : 15px ;
+    décoration textuelle : aucune ;
+    Poids de la police : gras ;
+}
+
+section{
+  Rembourrage : 60px 20px ;
+  text-align : centre ;
+}
+
+.services{
+  affichage : flex ;
+  Flex-Wrap : Wrap ;
+  Justificify-Content : Centre; 
+  écart : 25px ;
+}
+
+.card{
+  Contexte : Blanc ;
+  largeur : 260px ;
+  Rembourrage : 25px ;
+  Rayon de frontière : 10px ;
+  Box-shadow : 0 5px 15px RGB (0,0,0,0,1) ;
+  transition : 0,3s ;
+}
+
+.card :hover{
+  transformer : translateY(-5px) ;
+}
+
+.gallery{
+  affichage : flex ;
+  Flex-Wrap : Wrap ;
+  Justificify-Content : Centre ;
+}
+
+.gallery img{
+  largeur : 300px ;
+  marge : 10px ;
+  Rayon de frontière : 10px ;
+}
+
+.map{
+  largeur maximale : 900px ;
+  Margin : Auto ;
+  Marge-haut : 30px ;
+}
+
+.reviews{
+  affichage : flex ;
+  Flex-Wrap : Wrap ;
+  Justificify-Content : Centre ;
+  écart : 20px ;
+}
+
+.review{
+  Contexte : Blanc ;
+  Rembourrage : 20px ;
+  largeur : 250px ;
+  Rayon de frontière : 10px ;
+  Box-shadow : 0 4px 12px RGB (0,0,0,0,1) ;
+  }
+
+.contact{
+  Contexte : #e8f5e9 ;
+}
+
+form{
+  largeur maximale : 500px ;
+  Margin : Auto ;
+}
+
+entrée,textarea{
+  largeur : 100 % ;
+  Rembourrage : 12px ;
+  Marge-haut : 10px ;
+  Rayon de frontière : 8px ;
+  bordure : 1px #ccc solide ;
+  taille de police : 16px ;
+}
+
+textarea{
+  taille : 120px ;
+  redimensionnement : aucun ;
+}
+
+footer{
+  Contexte : #1b5e20 ;
+  Couleur : Blanc ;
+  text-align : centre ;
+  Rembourrage : 30px ;
+}
+
+.whatsapp-float{
+  Position : fixe ;
+  bas : 20px ;
+  droite : 20px ;
+  Contexte : #25D366 ;
+  Couleur : Blanc ;
+  taille de police : 24px ;
+  rembourrage : 15px 18px ;
+  rayon de frontière : 50 % ;
+  décoration textuelle : aucune ;
+}
+
 </style >
+
 </tête>
+
 < corps >
+
 <en-tête></en-tête>
+
 <div class="cta">
-<a href="tel :0780481152">    <button class="btn call"> Appeler</button></a >
+  
+<a href="tel :0780481152">
+<button class="btn call"> Appeler</button></a >
+
 <a href="https://wa.me/ 33780481152">    <button class="btn whatsapp">WhatsApp</button></a >
+
 </div>
+
 </en-tête>
+
 < navigation >
-<a href="#services">Services</a><a href="#realisations">Réalisations</a><a href="#zone">Zone d'intervention</a><a href="#contact">Contact</a>
+
+<a href="#services">Services</a>
+<a href="#realisations">Réalisations</a>
+<a href="#zone">Zone d'intervention</a>
+<a href="#contact">Contact</a>
+
 </navigation >
+
 <section>
+
 <h2>Jardinier professionnel à Dijon</h2>
-<p>RP Espace Vert 21 propose l'entretien complet de votre jardin : tonte de pelouse, élagage, abattage d'arbres, débroussaillage et création d'espaces verts à Dijon et dans toute la Côte-d'Or.</p>
+
+<p>
+RP Espace Vert 21 propose l'entretien complet de votre jardin : tonte de pelouse, élagage, abattage d'arbres, débroussaillage et création d'espaces verts à Dijon et dans toute la Côte-d'Or.
+</p>
+
 </section >
+
 <section id="services">
+
 <h2>Nos services</h2>
+
 <div class="services">
-<div class="card"><h3>Tonte de pelouse</h3><p>Entretien régulier et professionnel.</p></div>
-<div class="card"><h3>Élagage</h3><p>Taille et entretien des arbres.</p></div>
-<div class="card"><h3>Massacre</h3><p>Abattage sécurisé d'arbres dangereux.</p></div>
-<div class="card"><h3>Débroussaillage</h3><p>Nettoyage de terrain et friches.</p></div>
-<div class="card"><h3>Création de jardin</h3><p>Aménagement d'espaces verts.</p></div>
-<div class="card"><h3>Remise en état</h3><p>Nettoyage complet de terrain.</p></div>
+
+<div class="card">
+<h3>Tonte de pelouse</h3>
+<p>Entretien régulier et professionnel.</p>
 </div>
+
+<div class="card">
+<h3>Élagage</h3>
+<p>Taille et entretien des arbres.</p>
+</div>
+
+<div class="card">
+<h3>Massacre</h3>
+<p>Abattage sécurisé d'arbres dangereux.</p>
+</div>
+
+<div class="card">
+<h3>Débroussaillage</h3>
+<p>Nettoyage de terrain et friches.</p>
+</div>
+
+<div class="card">
+<h3>Création de jardin</h3>
+<p>Aménagement d'espaces verts.</p>
+</div>
+
+<div class="card">
+<h3>Remise en état</h3>
+<p>Nettoyage complet de terrain.</p>
+</div>
+
+</div>
+
 </section >
+
 <section id="réalisations">
+
 <h2>Nos réalisations</h2>
+
 <div class="gallery">
-<img src="IMG_3125.jpeg" alt="Tonte de pelouse"><img src="IMG_3126.jpeg" alt="Élagage"><img src="IMG_3127.png" alt="Création de jardin"><img src="IMG_3128.png" alt="Entretien de jardin">
+
+<img src="IMG_3125.jpeg" alt="Tonte de pelouse">
+<img src="IMG_3126.jpeg" alt="Élagage">
+<img src="IMG_3127.png" alt="Création de jardin">
+<img src="IMG_3128.png" alt="Entretien de jardin">
+
 </div>
+
 </section >
+
 <section id="zone">
+
 <h2>Zone d'intervention</h2>
+
 <p>Intervention à Dijon et dans toute la Côte-d'Or.</p>
+
 <div class="map">
-<iframe src="https://www.google.com/ maps ?q=Dijon&output=embed"largeur="100 % »hauteur="400 »style="border :0 ; »loading="paresseux »Autoriser l’écran plein ></iframe >
+
+<iframe src="https://www.google.com/ maps ?q=Dijon&output=embed"
+largeur="100 %»
+hauteur="400 »
+style="border :0 ;»
+loading="paresseux »
+Autoriser l’écran plein >
+
+</iframe >
+
 </div>
+
 </section >
+
 <section id="avis">
+
 <h2>Avis clients</h2>
+
 <div class="critiques">
-<div class="review"><p>Très bon travail pour l'élagage de mes arbres.</p>< fort > Jean M.< / fort ></div>
-<div class="review"><p>Entreprise sérieuse, jardin remis à neuf.</p>< forte> Sophie L.</forte></div>
-<div class="review"><p>Travail rapide et professionnel.</p>< fort >Marc D.< fort ></div>
+
+<div class="review"><p>Très bon travail pour l'élagage de mes arbres.</p>
+< fort > Jean M.< / fort >
 </div>
+
+<div class="review"><p>Entreprise sérieuse, jardin remis à neuf.</p>
+< forte> Sophie L.</forte>
+</div>
+
+<div class="review"><p>Travail rapide et professionnel.</p>
+< fort >Marc D.< fort >
+</div>
+
+</div>
+
 </section >
+
 <section class="contact » id="contact">
+
 <h2>Contact</h2>
-<p>Dijon - Côte-d’Or</p><p>07&nbsp ; 80% 48 11&nbsp ; 52</p><p>rayan.espace.vert21@gmail.com</p>
+
+<p>Dijon - Côte-d’Or</p><p>07&nbsp ; 80% 48 11&nbsp ; 52</p>
+<p>rayan.espace.vert21@gmail.com</p>
+
 <form action="https://formspree.io/ f/xyknjeba » méthode="POST">
+
 <type d’entrée="texte » nom="nom » placeholder="Nom » requis>
+
 <type d’entrée="email » nom="email » placeholder="Email » requis>
+
 <type d’entrée="tel » nom="téléphone » placeholder="Téléphone">
+
 <textarea name="message » placeholder="Votre message » required></textarea>
+
 <type button="soumission » class="btn appelle">Envoyer</button>
+
 </forme >
+
 </section >
+
 <pied>
+
 <p>© 2026 RP Espace Vert 21 - Jardinier à Dijon</p>
+
 </footer>
+
 <a href="https://wa.me/ 33780481152 » class="whatsapp-float"> </a>
-</corps ></html>
+
+</corps >
+</html>
